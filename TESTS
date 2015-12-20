@@ -1,0 +1,47 @@
+The base model i used to run my encoder and decoder 
+./encoder < input-file | ./decoder > new.input-file
+diff input-file new.input-file.
+
+
+Test 1:
+./encoder < decoder.c > cDecoder.c
+This encoded my source code and the compression rate was significantly lower than gzip. 
+When encoded and decoded into cEncoder.c there showed no differences in the file.
+
+./encoder < decoder.c | ./decoder > cDecoder.c
+diff decoder.c cDecoder.c
+
+
+Test 2:
+./encoder < encoder.c > cEncoder.c
+This encoded my source code and the compression rate was significantly lower than gzip. 
+When encoded and decoded into cEncoder.c there showed no differences in the file.
+
+./encoder < encoder.c | ./decoder > cEncoder.c
+diff encoder.c cEncoder.c
+
+
+Test 3: 
+./encoder < repeat.txt > cRepeat.txt
+ The text in repeat.txt was as follows: 
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ddddddddddddddddddddddddddddddddddddddddddddddddd
+eeeeeeeeeee
+fgasdfkjewkljqewrlkjwqeflkjasdf
+
+The repeating letters allowed my encoder to have the same level of compression as gzip.
+This was not possible with using my source code encoding. The diff check reported no 
+differences between the 2 files when i ran:
+
+./encoder < repeat.txt | ./decoder > newRepeat.txt
+diff repeat.txt newRepeat.txt
+
+If encoder and decoder are given an empty file, it will return an empty file. 
+If encoder is given no input it will get stuck in a loop for inputing chars in std in. 
+If decoder is given no input, it will loop until the binary for 001111 is given. 
+
+I ran my encoder and decoder on many different files that were on my computer and they all returned 
+with no difference in the old and new file. They all had a compression rate that was not optimal 
+but was acceptable. 
