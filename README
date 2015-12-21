@@ -1,46 +1,62 @@
-File: ‘decoder.c.gz’															|	File: ‘cDecoder.c’
-Size: 949       	Blocks: 8          IO Block: 4096   regular file			|	Size: 2048      	Blocks: 8          IO Block: 4096   regular file
-Device: 805h/2053d	Inode: 7602893     Links: 1									|	Device: 805h/2053d	Inode: 7602990     Links: 1
-Access: (0664/-rw-rw-r--)  Uid: ( 1000/cryptonok)   Gid: ( 1000/cryptonok)		|	Access: (0664/-rw-rw-r--)  Uid: ( 1000/cryptonok)   Gid: ( 1000/cryptonok)
-Access: 2015-11-19 20:34:58.787705350 -0500										|	Access: 2015-11-19 20:43:38.882595689 -0500
-Modify: 2015-11-19 20:34:54.535811364 -0500										|	Modify: 2015-11-19 20:43:38.890595486 -0500
-Change: 2015-11-19 20:37:56.807246111 -0500										|	Change: 2015-11-19 20:43:38.890595486 -0500
+Gzip Compressed
+	File: ‘decoder.c.gz’															
+	Size: 949       	Blocks: 8          IO Block: 4096   regular file		
+	Device: 805h/2053d	Inode: 7602893     Links: 1								
+	Access: (0664/-rw-rw-r--)  Uid: ( 1000/cryptonok)   Gid: ( 1000/cryptonok)
 
-																File: ‘decoder.c’
-																Size: 2850      	Blocks: 8          IO Block: 4096   regular file
-																Device: 805h/2053d	Inode: 7602933     Links: 1
-																Access: (0664/-rw-rw-r--)  Uid: ( 1000/cryptonok)   Gid: ( 1000/cryptonok)
-																Access: 2015-11-19 20:43:38.826597112 -0500
-																Modify: 2015-11-19 20:43:02.035531212 -0500
-																Change: 2015-11-19 20:43:02.035531212 -0500
+My Compressor 
+	File: ‘cDecoder.c’
+	Size: 2048      	Blocks: 8          IO Block: 4096   regular file
+	Device: 805h/2053d	Inode: 7602990     Links: 1
+	Access: (0664/-rw-rw-r--)  Uid: ( 1000/cryptonok)   Gid: ( 1000/cryptonok)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Original File
+	File: ‘decoder.c’
+	Size: 2850      	Blocks: 8          IO Block: 4096   regular file
+	Device: 805h/2053d	Inode: 7602933     Links: 1
+	Access: (0664/-rw-rw-r--)  Uid: ( 1000/cryptonok)   Gid: ( 1000/cryptonok)
+
+-------------------------
 Compression Ratios:
 	gzip:  		66.7%
 	encoder.c: 	28.1%
-=====================================================================================================================================================================
-																				|	
-File: ‘encoder.c.gz’															|	File: ‘cEncoder.c’
-Size: 1823      	Blocks: 8          IO Block: 4096   regular file			|	Size: 3969      	Blocks: 8          IO Block: 4096   regular file
+=========================
 
-														File: ‘encoder.c’
-														Size: 5966      	Blocks: 16         IO Block: 4096   regular file
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Gzip Compressed																
+	File: ‘encoder.c.gz’															
+	Size: 1823      	Blocks: 8          IO Block: 4096   regular file			
+
+My Compressor
+	File: ‘cEncoder.c’
+	Size: 3969      	Blocks: 8          IO Block: 4096   regular file
+	
+Original File
+	File: ‘encoder.c’
+	Size: 5966      	Blocks: 16         IO Block: 4096   regular file
+
+-------------------------
 Compression Ratios: 
 	gzip: 		69.4%
 	encoder.c: 	33.5%
-=====================================================================================================================================================================
-																				|
-File: ‘repeat.txt.gz’															|	File: ‘cRepeat.txt’
-Size: 79        	Blocks: 8          IO Block: 4096   regular file			|	Size: 80        	Blocks: 8          IO Block: 4096   regular file
+=========================
+			
 
-														File: ‘repeat.txt’
-														Size: 297       	Blocks: 8          IO Block: 4096   regular file
+Gzip Compressed																
+	File: ‘repeat.txt.gz’															
+	Size: 79        	Blocks: 8          IO Block: 4096   regular file			|	
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+My Compressor
+	File: ‘cRepeat.txt’
+	Size: 80        	Blocks: 8          IO Block: 4096   regular file
+
+Original File 														
+	File: ‘repeat.txt’
+	Size: 297       	Blocks: 8          IO Block: 4096   regular file
+
+-------------------------
 Compression Ratios: 
 	gzip:		73.4%
 	encoder.c:	73.1%
-=====================================================================================================================================================================
-
+=========================
